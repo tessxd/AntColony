@@ -45,7 +45,7 @@ This is to make sure that ants do not get stuck in one path, and
 continue to explore new paths. By exploring new paths, the ants
 will be able to adjust dynamically to new obstacles. 
 
-![Pheromone evaporation](/assets/pheromone.PNG)
+![Dataset Plotted]({{ "/assets/pheromone.PNG" | absolute_url }}){: .center-image}
 *Equation 2: Evaporation [1]*
 
 Where $$\tau$$ is once again the pheromone amount at a particular cell. And 
@@ -56,6 +56,7 @@ on the path taken by the ants. More pheromones are deposited
 as an inverse function of how long the path is. The pheromone
 deposition equation is shown below.
 
+![Dataset Plotted]({{ "/assets/pheromone.PNG" | absolute_url }}){: .center-image}
 ![Pheromone deposition](/assets/updateStep.PNG)  
 *Equation 3: Deposition [1]*
 
@@ -75,13 +76,13 @@ Using this setup, the main algorithm as described in the solution
 section was written in an AntColonyPathPlanner() function. The code flow 
 for this loop is shown below. 
 
-![Code Flow for ACO](/assets/overall.PNG)
+![Dataset Plotted]({{ "/assets/pheromone.PNG" | absolute_url }}){: .center-image}
 *[1]*
 
 
 To dynamically update the path, the code flow below was used. 
 
-![Code Flow for dynamic update](/assets/dynamicUpdate.PNG)
+![Dataset Plotted]({{ "/assets/pheromone.PNG" | absolute_url }}){: .center-image}
 *[1]*
 
 
@@ -99,18 +100,18 @@ again calculate the most probable step in a loop until the goal cell is reached.
 Below are a series of images showing our algorithm working. The blue 
 represents the paths found, and the red path shows the best path found. 
 
-![Working Simulation 1](/assets/bestPath.PNG)
-*[1]*
-![Working Simulation 2](/assets/behindObstacle.PNG)
-*[1]*
-![Working Simulation 3](/assets/workingSearchWithBuffers.PNG)
-*[1]*
+![Dataset Plotted]({{ "/assets/bestPath.PNG" | absolute_url }}){: .center-image}
+
+![Dataset Plotted]({{ "/assets/behindObstacle.PNG" | absolute_url }}){: .center-image}
+
+![Dataset Plotted]({{ "/assets/workingSearchWithBuffers.PNG" | absolute_url }}){: .center-image}
+
 Dynamic updates were also successful in software. We added an add wall 
 button to the GUI and after the robot started to move towards it's goal state a 
 wall was added to the path. Below are pictures of the robot dynamically
 updating it's path to account for a new obstacle. 
 
-![Working Simulation 4](/assets/added wall.PNG)
+![Dataset Plotted]({{ "/assets/added wall.PNG" | absolute_url }}){: .center-image}
 
 Finally, here is a video of the robot working in hardware to navigate around
 a wall specified by the environment.
