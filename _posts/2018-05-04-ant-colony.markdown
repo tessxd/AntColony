@@ -34,10 +34,11 @@ The first step is to determine the most probable cell from around the robot.
 Using the equation shown below. 
 
 ![Dataset Plotted]({{ "/assets/probablilityfunction.PNG" | absolute_url }}){: .center-image}
+*Equation 1: Probability [1]*
 
 Where $$\tau$$ is the pheromone amount and $$\eta$$ is the heuristic information. 
 The probability calculated for the the ant, $$k$$, moving to cell $$j$$ from 
-cell $$i$$. $$N$$includes all the possible neighboring cells. 
+cell $$i$$. $$N$$ includes all the possible neighboring cells. 
 
 The second step is to evaporate all the pheromones on the map.
 This is to make sure that ants do not get stuck in one path, and 
