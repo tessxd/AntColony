@@ -56,7 +56,7 @@ on the path taken by the ants. More pheromones are deposited
 as an inverse function of how long the path is. The pheromone
 deposition equation is shown below.
 
-![Dataset Plotted]({{ "/assets/updateStep.PNG" | absolute_url }}){: .center-image} 
+![Dataset Plotted]({{ "/assets/updatestep.PNG" | absolute_url }}){: .center-image} 
 *Equation 3: Deposition [1]*
 
 
