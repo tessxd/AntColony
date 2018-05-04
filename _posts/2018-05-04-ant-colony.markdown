@@ -56,8 +56,7 @@ on the path taken by the ants. More pheromones are deposited
 as an inverse function of how long the path is. The pheromone
 deposition equation is shown below.
 
-![Dataset Plotted]({{ "/assets/pheromone.PNG" | absolute_url }}){: .center-image}
-![Pheromone deposition](/assets/updateStep.PNG)  
+![Dataset Plotted]({{ "/assets/updateStep.PNG" | absolute_url }}){: .center-image} 
 *Equation 3: Deposition [1]*
 
 
@@ -76,13 +75,13 @@ Using this setup, the main algorithm as described in the solution
 section was written in an AntColonyPathPlanner() function. The code flow 
 for this loop is shown below. 
 
-![Dataset Plotted]({{ "/assets/pheromone.PNG" | absolute_url }}){: .center-image}
+![Dataset Plotted]({{ "/assets/overall.PNG" | absolute_url }}){: .center-image}
 *[1]*
 
 
 To dynamically update the path, the code flow below was used. 
 
-![Dataset Plotted]({{ "/assets/pheromone.PNG" | absolute_url }}){: .center-image}
+![Dataset Plotted]({{ "/assets/dynamicUpdate.PNG" | absolute_url }}){: .center-image}
 *[1]*
 
 
