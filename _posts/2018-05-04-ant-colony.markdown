@@ -33,8 +33,7 @@ algorithm for robot path planning.
 The first step is to determine the most probable cell from around the robot. 
 Using the equation shown below. 
 
-![Probability of Steps](/assets/probablilityfunction.PNG)
-*Equation 1: Probability [1]*
+![Dataset Plotted]({{ "/assets/probablilityfunction.PNG" | absolute_url }}){: .center-image}
 
 Where $$\tau$$ is the pheromone amount and $$\eta$$ is the heuristic information. 
 The probability calculated for the the ant, $$k$$, moving to cell $$j$$ from 
